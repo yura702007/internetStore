@@ -10,6 +10,7 @@ from models.product import Products
 # инициализация декларативного стиля
 Base = declarative_base()
 
+
 class Order(Base):
     """
     Класс для создания таблицы "Заказ",
@@ -34,4 +35,3 @@ class Order(Base):
 
     def __str__(self):
         return f'{self.quantity} {self.data}'
-
